@@ -5,15 +5,11 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
 
 body {
   margin: 0;
@@ -23,39 +19,89 @@ body {
   ;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+// h1 {
+//   font-size: 3.2em;
+//   line-height: 1.1;
+// }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+// button {
+//   border-radius: 8px;
+//   border: 1px solid transparent;
+//   padding: 0.6em 1.2em;
+//   font-size: 1em;
+//   font-weight: 500;
+//   font-family: inherit;
+//   background-color: #1a1a1a;
+//   cursor: pointer;
+//   transition: border-color 0.25s;
+// }
+// button:hover {
+//   border-color: #646cff;
+// }
+// button:focus,
+// button:focus-visible {
+//   outline: 4px auto -webkit-focus-ring-color;
+// }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+// @media (prefers-color-scheme: light) {
+//   :root {
+//     color: #213547;
+//     background-color: #ffffff;
+//   }
+//   a:hover {
+//     color: #747bff;
+//   }
+//   button {
+//     background-color: #f9f9f9;
+//   }
+// }
+
+
+// 아래는 한경세팅
+// :root {
+//   --col-w-270: 270px;
+//   --col-w-336: 336px;
+//   --col-w-373: 373px;
+//   --col-w-474: 474px;
+//   --col-w-580: 580px;
+//   --col-line-color: #ddd; /*#d9d9d9*/
+
+//   --ad-y-padding: 20px;
+
+//   --list-line-color: #ddd; /*#eee*/
+//   --module-line-color: #ddd; /*#ddd*/
+//   --fix-module-line-color: #121212;
+
+//   --keycolor-koreamarket: #EA666E; /*#fe4e59*/
+//   --keycolor-globalmarket: #54B5B1; /*#00beb5*/
+//   --keycolor-jipconomy: #328CC8; /*007ed2*/
+//   --keycolor-arte: #86704f;
+//   --keycolor-travel: #2caded;
+  
+//   --color-up: #ff0000;    
+//   --color-down: #3976ff;    
+//   --color-hold: #999;  
+
+//   --icon-x: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-linejoin='round' d='M18 6 6 18M6 6l12 12'/%3E%3C/svg%3E") no-repeat 50% 50%/contain;
+// }
+
+// html,body {-moz-text-size-adjust:none; -webkit-text-size-adjust:none; text-size-adjust:none}
+// body,div,span,em,strong,select,section,article,nav,footer,header,address,caption,figure,figcaption,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,textarea,input,button,tr,th,td,table {margin:0; padding:0}
+// header,footer,section,article,aside,nav,hgroup,details,menu,figure,figcaption {display:block}
+// body {color:#121212; font-size:16px; font-family:-apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Apple SD 산돌고딕 Neo', 'Malgun Gothic', '맑은 고딕', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; letter-spacing:-0.039em}
+// h1,h2,h3,h4,h5,h6 {font-size:inherit}
+// ol,ul,li {list-style:none}
+// blockquote,q {quotes:none}
+// blockquote:before,blockquote:after,q:after,q:before {content:''; content:none}
+// img,fieldset,iframe {border:0 none; vertical-align:top}
+// img {max-width:100%}
+// i,em,address,optgroup {font-style:normal}
+// hr {display:none}
+// input,button,textarea,select {font:inherit}
+// button {border:0 none; border-radius:0; background:transparent; cursor:pointer}
+// table {border-collapse:collapse; border-spacing:0}
+// caption {width:0; height:0; overflow:hidden; color:transparent; text-indent:-9999px}
+// legend,.blind {position:absolute; width:1px; height:1px; margin:-1px; padding:0; border:none; overflow:hidden; clip:rect(0 0 0 0); color:transparent}
+// a {color:#121212; text-decoration:none}
+// a:hover {text-decoration:underline; text-underline-offset:2px}
+// a[role="button"] {cursor:pointer}
