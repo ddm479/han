@@ -1,0 +1,99 @@
+// // .ad-top {
+// //     text-align: center;
+// //     font-size: 0;
+// //     line-height: 0;
+
+// //     &-inner {
+// //         position: relative;
+// //         display: inline-block;
+// //         margin: 0 auto;
+// //         max-width: 970px;
+
+// //         &-2 {
+// //             display: flex;
+// //             align-items: center;
+// //             justify-content: center;
+// //             min-height: 250px;
+// //             padding-top: 24px;
+// //         }
+// //     }
+
+// //     &-img {}
+// // }
+
+// // .btn-close-ad {
+// //     // display: none;
+// //     // position: absolute;
+// //     right: 0;
+// //     bottom: 0;
+// //     width: 24px;
+// //     height: 24px;
+// //     background-color: #7e898f;
+// //     text-align: center;
+
+// //     border-color: red;
+// //     // position: absolute;
+// //     width: 1px;
+// //     height: 1px;
+// //     margin: -1px;
+// //     padding: 0;
+// //     overflow: hidden;
+// //     clip: rect(0 0 0 0);
+// //     color: transparent;
+// // }
+
+
+
+// 한경 실제css
+.adBanner {
+    text-align: center;
+}
+
+.adContent {
+    display: inline-block;
+    max-width: 970px;
+    position: relative;
+}
+
+.adInner {
+    padding: 24px 0px 20px;
+    min-height: 250px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-width: 970px;
+}
+
+.adImage {
+    vertical-align: bottom;
+}
+
+.closeButton {
+    font: 400 0px / 0px -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Apple SD Gothic Neo", "Apple SD 산돌고딕 Neo", "Malgun Gothic", "맑은 고딕", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(126, 137, 143);
+    border-radius: 0px;
+    cursor: pointer;
+    bottom: 20px;
+    display: block;
+    height: 24px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    width: 24px;
+}
+
+.closeButton:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+.blind {
+    margin: -1px;
+    clip: rect(0px, 0px, 0px, 0px);
+    color: rgba(0, 0, 0, 0);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}
