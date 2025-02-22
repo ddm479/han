@@ -1,22 +1,29 @@
-import React,{useState} from "react"
-import './Ad.scss'
-export const Ad = () => {
-    
-    const [clicked, setClicked] = useState(false) // 광고 닫는 버튼 클릭 여부
-    // 광고 닫는 함수
-    const AdClose = () => { setClicked(true)}
-    return (
-        <div className="ad-top">
-            <div className="ad-top-inner">
-                <div className="ad-top-inner-2">
-                    <img src="src\assets\samsungAd.gif" className="ad-top-img"></img>
-                </div>
-                <button onClick={AdClose} className="btn-close-ad"></button>
-                <iframe id="google_ads_iframe_/3448900/Main_Leaderboard1_0" name="google_ads_iframe_/3448900/Main_Leaderboard1_0" title="3rd party ad content" width="970" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe>
-            </div>
-            
-        </div>
-    )
+import React from "react";
+import styled from "styled-components";
+import AdInButton from "./AdInButton";
+// props로 padding값 넘겨받아 재사용할 수 있게 styled component
+
+type AdProps = {
+    padding?: string;
+    imageUrl: string;
+    linkUrl: string;
 }
+
+const AdContainer = styled.div<{ padding?: string }>`
+    padding: ${(props) => props.padding || "20px 0"};
+    
+`;
+
+const Ad = ({ padding, imageUrl, linkUrl}: AdProps) => {
+    return (<AdContainer padding={padding}>
+        <div className='adInner'>
+            <a href={linkUrl} target="_blank" rel="noopener noreferrer">
+                <img src={imageUrl} width={970} height={250} className="adImage" />
+            </a>
+            <AdInButton/>
+        </div>
+    </AdContainer>)
+    ;
+};
 
 export default Ad
