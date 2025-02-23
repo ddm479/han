@@ -100,10 +100,11 @@
 
 import React, { useState } from 'react';
 import Ad from './Ad';
+import { AdProvider } from "./AdContext";
 import './AdBanner.scss'; // scss는 전역(global) 적용 - import시 모든컴포넌트에서 클래스 사용가능 
 
-type AdBannerProps  =  {
-    
+type AdBannerProps = {
+
 }
 
 const AdBanner = () => {

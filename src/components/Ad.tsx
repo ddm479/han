@@ -14,16 +14,16 @@ const AdContainer = styled.div<{ padding?: string }>`
     
 `;
 
-const Ad = ({ padding, imageUrl, linkUrl}: AdProps) => {
+const Ad = ({ padding, imageUrl, linkUrl }: AdProps) => {
     return (<AdContainer padding={padding}>
         <div className='adInner'>
             <a href={linkUrl} target="_blank" rel="noopener noreferrer">
                 <img src={imageUrl} width={970} height={250} className="adImage" />
             </a>
-            <AdInButton/>
+            <AdInButton />
         </div>
     </AdContainer>)
-    ;
+        ;
 };
 
-export default Ad
+export default Ad                             
