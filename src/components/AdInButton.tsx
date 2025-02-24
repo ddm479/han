@@ -9,7 +9,7 @@ const AdInButton = () => {
             e.preventDefault();
             handleClose();
         }}>
-            <span className='blind'>X</span>
+
         </button>
     )
 }

@@ -101,6 +101,7 @@
 import React, { useState } from 'react';
 import Ad from './Ad';
 import { AdProvider } from "./AdContext";
+import AdInButton from './AdInButton';
 import './AdBanner.scss'; // scss는 전역(global) 적용 - import시 모든컴포넌트에서 클래스 사용가능 
 
 type AdBannerProps = {
@@ -114,15 +115,14 @@ const AdBanner = () => {
         setIsVisible(false);
     };
 
-    if (!isVisible) return null;
 
-    return (
+    return isVisible ? (
         <AdProvider handleClose={handleClose}> {/* ✅ Context Provider로 감싸기 */}
             <div className="adBanner">
-                <Ad padding="24px 0 20px" imageUrl="src/assets/samsungAd.gif" linkUrl="https://www.naver.com/" />
+                <Ad padding="24px 0 20px" imageUrl="src/assets/samsungAd.gif" linkUrl="https://www.naver.com/" Component={<AdInButton />} />
             </div>
         </AdProvider>
-    );
+    ) : null;
 };
 
 export default AdBanner;

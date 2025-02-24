@@ -7,6 +7,7 @@ type AdProps = {
     padding?: string;
     imageUrl: string;
     linkUrl: string;
+    Component?: React.ReactNode;
 }
 
 const AdContainer = styled.div<{ padding?: string }>`
@@ -14,13 +15,14 @@ const AdContainer = styled.div<{ padding?: string }>`
     
 `;
 
-const Ad = ({ padding, imageUrl, linkUrl }: AdProps) => {
-    return (<AdContainer padding={padding}>
+const Ad = ({ padding, imageUrl, linkUrl, Component }: AdProps) => {
+    return (
+    <AdContainer padding={padding}>
         <div className='adInner'>
             <a href={linkUrl} target="_blank" rel="noopener noreferrer">
                 <img src={imageUrl} width={970} height={250} className="adImage" />
             </a>
-            <AdInButton />
+            {Component}
         </div>
     </AdContainer>)
         ;
