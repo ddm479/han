@@ -12,7 +12,8 @@ type AdProps = {
 
 const AdContainer = styled.div<{ padding?: string }>`
     padding: ${(props) => props.padding || "20px 0"};
-    
+    display: inline-block;
+    max-width: 970px;    
 `;
 
 const Ad = ({ padding, imageUrl, linkUrl, Component }: AdProps) => {
@@ -24,8 +25,7 @@ const Ad = ({ padding, imageUrl, linkUrl, Component }: AdProps) => {
             </a>
             {Component}
         </div>
-    </AdContainer>)
-        ;
+    </AdContainer>);
 };
 
 export default Ad                             

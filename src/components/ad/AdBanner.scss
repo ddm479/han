@@ -46,6 +46,7 @@
 
 // 한경 실제css
 .adBanner {
+    // position: block;
     text-align: center;
 }
 
@@ -59,9 +60,6 @@
     min-width: 970px;
     min-height: 250px;
     position: relative;
-    align-items: center;
-    display: flex;
-    justify-content: center;
 }
 
 .adImage {
