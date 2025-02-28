@@ -1,0 +1,10 @@
+@use '../../index' as *;
+
+.stock-marquee-wrap {
+    background-color: green;
+    min-height: 28px;
+}   
+
+.stock-marquee {
+    @extend %center-align;
+}

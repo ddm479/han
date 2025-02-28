@@ -103,3 +103,11 @@ legend,.blind {position:absolute; width:1px; height:1px; margin:-1px; padding:0;
 a {color:#121212; text-decoration:none}
 a:hover {text-decoration:underline; text-underline-offset:2px}
 a[role="button"] {cursor:pointer}
+
+// 플레이스홀더(PlaceHolder) 선택자
+%center-align {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// @use를 사용하여 가져올건데 가져올파일앞에 _를 붙여야한다.
