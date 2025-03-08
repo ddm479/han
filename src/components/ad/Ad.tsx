@@ -10,15 +10,15 @@ type AdProps = {
     Component?: React.ReactNode;
 }
 
-const AdContainer = styled.div<{ padding?: string }>`
-    padding: ${(props) => props.padding || "20px 0"};
+const AdContainer = styled.div<{ $padding?: string }>`
+    padding: ${(props) => props.$padding || "20px 0"};
     display: inline-block;
     max-width: 970px;    
 `;
 
 const Ad = ({ padding, imageUrl, linkUrl, Component }: AdProps) => {
     return (
-    <AdContainer padding={padding}>
+    <AdContainer $padding={padding}>
         <div className='adInner'>
             <a href={linkUrl} target="_blank" rel="noopener noreferrer">
                 <img src={imageUrl} width={970} height={250} className="adImage" />
