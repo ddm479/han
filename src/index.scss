@@ -81,6 +81,8 @@
   --color-hold: #999;  
 
   --icon-x: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-linejoin='round' d='M18 6 6 18M6 6l12 12'/%3E%3C/svg%3E") no-repeat 50% 50%/contain;
+
+  
 }
 
 html,body {-moz-text-size-adjust:none; -webkit-text-size-adjust:none; text-size-adjust:none}
@@ -104,10 +106,8 @@ a {color:#121212; text-decoration:none}
 a:hover {text-decoration:underline; text-underline-offset:2px}
 a[role="button"] {cursor:pointer}
 
-// 플레이스홀더(PlaceHolder) 선택자
+// 플레이스홀더(PlaceHolder) 선택자, @extend를 사용해 재사용할 수 있다
 %center-align {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-// @use를 사용하여 가져올건데 가져올파일앞에 _를 붙여야한다.
