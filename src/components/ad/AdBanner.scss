@@ -2,8 +2,7 @@
 .adBanner {
     // position: block;
     text-align: center;
-    
-    max-height: 294px;  // 3  transition 부드럽게 작동시키려면 초깃값 꼭 설정
+    max-height: var(--maxHeight); // 3  transition 부드럽게 작동시키려면 초깃값 꼭 설정 
     transition: max-height 0.8s ease; // 3   
     overflow: hidden; // 3
     // AdBanner의 height는 줄어들고 그 밑에 내용들이 위로 올라가면서 다 덮어지면 언마운트

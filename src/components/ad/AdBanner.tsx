@@ -1,5 +1,5 @@
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useLayoutEffect } from 'react';
 import Ad from './Ad';
 import { AdProvider } from "./AdContext";
 import AdInButton from './AdInButton';
@@ -13,6 +13,21 @@ const AdBanner = () => {
     const [isVisible, setIsVisible] = useState(true);
     const [isSlidingUp, setIsSlidingUp] = useState(false);
 
+    const [maxHeight, setMaxHeight] = useState(0);
+    const adBannerRef = useRef<HTMLDivElement>(null);
+
+    useLayoutEffect(() => {
+        // console.log("adBannerRef.current",adBannerRef.current)
+        if (adBannerRef.current) {
+            // console.log("배너의 높이:", adBannerRef.current.offsetHeight);
+            // setMaxHeight(adBannerRef.current.offsetHeight);
+            // console.log("useLayoutEffect() maxHeight", maxHeight)
+            adBannerRef.current.style.setProperty("--maxHeight", `${adBannerRef.current.offsetHeight}px`);
+        }
+    }, []);
+    // console.log("maxHeight", maxHeight)
+    // console.log("adBannerRef.current",adBannerRef.current)
+
     const handleClose = () => {
         setIsSlidingUp(true);  // 애니메이션 시작 (위로 올라가기 시작)
     
@@ -21,6 +36,7 @@ const AdBanner = () => {
     return ( isVisible && (
         <AdProvider handleClose={handleClose}> {/* ✅ Context Provider로 감싸기 */}
             <div 
+                ref={adBannerRef}
                 className={`adBanner${isSlidingUp ? ' hidden' : ''}`}
                 onTransitionEnd={() => isSlidingUp && setIsVisible(false)}
                 // isSlidingUp이 true인 경우에만 setIsVisible(false)실행 
