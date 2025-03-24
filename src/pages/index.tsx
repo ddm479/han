@@ -1,6 +1,7 @@
 import { CSSProperties } from "react"
 import AdBanner from "../components/ad/AdBanner"
 import Marquee from "../components/marquee/Marquee"
+import Header from "../components/header/Header"
 
 const topDivStyle:CSSProperties = {
     
@@ -13,6 +14,7 @@ const Home = () => {
             />
             {/* 페이지 내용 */}
             <Marquee />
+            <Header />
         </>
     )
 }

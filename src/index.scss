@@ -108,6 +108,7 @@ a[role="button"] {cursor:pointer}
 
 // 플레이스홀더(PlaceHolder) 선택자, @extend를 사용해 재사용할 수 있다
 %center-align {
+  min-width: 1200px;
   max-width: 1200px;
   margin: 0 auto;
 }
