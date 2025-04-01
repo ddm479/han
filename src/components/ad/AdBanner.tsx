@@ -22,7 +22,7 @@ const AdBanner = () => {
             // console.log("배너의 높이:", adBannerRef.current.offsetHeight);
             // setMaxHeight(adBannerRef.current.offsetHeight);
             // console.log("useLayoutEffect() maxHeight", maxHeight)
-            adBannerRef.current.style.setProperty("--maxHeight", `${adBannerRef.current.offsetHeight}px`);
+            adBannerRef.current.style.setProperty("--maxHeight", `${adBannerRef.current.offsetHeight}px`); // css var값 동적으로 설정
         }
     }, []);
     // console.log("maxHeight", maxHeight)
