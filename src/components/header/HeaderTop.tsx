@@ -1,7 +1,7 @@
 import React from "react";
 import RelServiceList from "./RelServiceList";
 import DateDisplay from "./DateDisplay";
-import Login from "./Login";
+import HeaderUtil from "./utils/HeaderUtil";
 
 const HeaderTop = () => {
     const today = new Date();
@@ -10,10 +10,10 @@ const HeaderTop = () => {
         <div className="header-top-inner">
             <RelServiceList />
             <div className="main-logo-area">
-                <a href="https://www.hankyung.com/"><img src="src/assets/logo-hk.svg" width="220" height="55" /></a>
+                <a href="https://www.hankyung.com/"><img src="src/assets/header/logo-hk.svg" width="220" height="55" /></a>
             </div>
 
-            <Login/>
+            <HeaderUtil/>
             <DateDisplay />
             
         </div>

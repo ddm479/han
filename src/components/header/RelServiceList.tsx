@@ -2,11 +2,11 @@ import React from "react";
 import RelServiceItem from "./RelServiceItem";
 
 const serviceLinks = [
-    { className: "mn-newspaper", href: "https://www.hankyung.com/", imgSrc: "src/assets/icon-rel-newspaper.svg" },
-    { className: "mn-hktv", href: "https://www.hankyung.com/", imgSrc: "src/assets/icon-rel-hktv.svg" },
-    { className: "mn-wsj", href: "https://www.hankyung.com/", imgSrc: "src/assets/icon-rel-wsj.svg" },
-    { className: "mn-ked", href: "https://www.hankyung.com/", imgSrc: "src/assets/icon-rel-ked.svg" },
-    { className: "mn-subscription", href: "https://www.hankyung.com/", imgSrc: "src/assets/icon-rel-subscription.svg" }
+    { className: "mn-newspaper", href: "https://www.hankyung.com/", imgSrc: "src/assets/header/icon-rel-newspaper.svg" },
+    { className: "mn-hktv", href: "https://www.hankyung.com/", imgSrc: "src/assets/header/icon-rel-hktv.svg" },
+    { className: "mn-wsj", href: "https://www.hankyung.com/", imgSrc: "src/assets/header/icon-rel-wsj.svg" },
+    { className: "mn-ked", href: "https://www.hankyung.com/", imgSrc: "src/assets/header/icon-rel-ked.svg" },
+    { className: "mn-subscription", href: "https://www.hankyung.com/", imgSrc: "src/assets/header/icon-rel-subscription.svg" }
 ];
 
 const RelServiceList = () => {
