@@ -22,12 +22,12 @@ const Modal = ({ isModalOpen, onClose, children, className }: ModalProps) => {
 
         // 모달 열렸을 때만 이벤트 등록
         if (isModalOpen) {
-            document.addEventListener("mousedown", handleClickOutside);
+            document.addEventListener("mouseup", handleClickOutside);
         }
 
         // 클린 업
         return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
+            document.removeEventListener("mouseup", handleClickOutside);
         };
     }, [isModalOpen, onClose]);
 
