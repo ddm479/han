@@ -1,0 +1,14 @@
+@mixin bg-img($width, $height, $url, $display: inline-block, $position: 50% 50%, $size: contain) {
+    content: '';
+    display: $display;
+    width: $width;
+    height: $height;
+    background: url($url) no-repeat $position / $size;
+
+    // 예시
+    // content: '';
+    // display: inline-block;
+    // width: 85px;
+    // height: 32px;
+    // background: url('src/assets/header/logo-myhankyung2-ani.svg') no-repeat 50% 50% / contain;
+}

@@ -54,6 +54,9 @@
 //   }
 // }
 
+// index.scss로 모듈화해서(여러 Sass 모듈을 @forward로 index.scss에 모아서) 한 번에 불러오기
+@forward './styles/variables';  // SCSS가 _variables.scss 파일을 자동으로 인식
+@forward './styles/mixins';
 
 // 아래는 한경세팅
 :root {
