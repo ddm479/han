@@ -10,7 +10,7 @@ type ModalProps = {
 
 // 모달 창 바깥 영역 클릭 시 닫히는 효과 구현한 컴포넌트
 const Modal = ({ isModalOpen, onClose, children, className }: ModalProps) => {
-    const modalRef = useRef<HTMLDivElement>(null);
+    const modalRef = useRef<HTMLDivElement>(null); // 초기값은 null, 렌더링 이후 ref={modalRef}를 통해 연결됨
 
     useEffect(() => {
         const handleClickOutside = (e: MouseEvent) => {

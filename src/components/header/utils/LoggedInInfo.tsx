@@ -9,8 +9,8 @@ type LoggedInInfoProps = {
     gradientBorder: boolean;
 };
 
-const Logo = styled.span<{ $imgUrl: string }>`
-    &::after {
+const Icon = styled.span<{ $imgUrl: string }>`
+    &::before {
         content: "";
         display: inline-block;
         width: 20px;
@@ -30,7 +30,7 @@ const LoggedInInfo = ({ linkUrl, imgUrl, title, description, gradientBorder }: L
         <div className={`my-item${gradientBorder ? ' myhankyung' : ''}`}>
             <a href={linkUrl} className="my-item__link">
                 <div>
-                    <Logo $imgUrl={imgUrl} />
+                    <Icon $imgUrl={imgUrl} />
                 </div>
                 <div className="txt">
                     <p className="title">{title}</p>
