@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import { Icon } from "../../../styles/Icon";
 
 type LoggedInInfoProps = {
     linkUrl: string;
@@ -9,20 +9,6 @@ type LoggedInInfoProps = {
     gradientBorder: boolean;
 };
 
-const Icon = styled.span<{ $imgUrl: string }>`
-    &::before {
-        content: "";
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background-image: ${({ $imgUrl }) => `url(${$imgUrl})`};
-        vertical-align: middle;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: contain;
-    }   
-`;
-
 const LoggedInInfo = ({ linkUrl, imgUrl, title, description, gradientBorder }: LoggedInInfoProps) => {
 
     return (
@@ -30,7 +16,7 @@ const LoggedInInfo = ({ linkUrl, imgUrl, title, description, gradientBorder }: L
         <div className={`my-item${gradientBorder ? ' myhankyung' : ''}`}>
             <a href={linkUrl} className="my-item__link">
                 <div>
-                    <Icon $imgUrl={imgUrl} />
+                    <Icon $width="20px" $height="20px" $imgUrl={imgUrl} />
                 </div>
                 <div className="txt">
                     <p className="title">{title}</p>

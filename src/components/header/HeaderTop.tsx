@@ -4,8 +4,6 @@ import DateDisplay from "./DateDisplay";
 import HeaderUtil from "./utils/HeaderUtil";
 
 const HeaderTop = () => {
-    const today = new Date();
-    const formattedDate = `${today.getFullYear()}. ${today.getMonth() + 1}. ${today.getDate()}`;
     return (
         <div className="header-top-inner">
             <RelServiceList />

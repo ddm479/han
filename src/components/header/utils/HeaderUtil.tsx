@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import styled from "styled-components";
 import LoggedInModalContent from "./LoggedInModalContent";
 import LoggedOutModalContent from "./LoggedOutModalContent";
 import Modal from "../../Modal";
-import LoggedInInfo from "./LoggedInInfo";
 
 const HeaderUtil = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
