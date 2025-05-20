@@ -30,6 +30,15 @@
             justify-content: center;
             // gap: 10px;
             padding: 40px 0 24px;
+
+            .main-logo {
+                position: relative;
+                &:hover .hk-tooltip {
+                    opacity: 1;
+                    z-index: 1;
+                    visibility: visible;
+                }
+            }
         }
 
         ///// RelServiceList.tsx
@@ -42,35 +51,35 @@
             top: 55px;
             left: 0;
 
-            a {
-                display: inline-flex;
-                height: 24px;
+            .mn {
+                &-newspaper a::before {
+                    width: 26px;
+                    height: 20px;
+                }
+
+                &-hktv a::before {
+                    width: 44px;
+                    height: 22px;
+                }
+
+                &-wsj a::before {
+                    width: 28px;
+                    height: 16px;
+                }
+
+                &-ked a::before {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                &-subscription a::before {
+                    width: 24px;
+                    height: 24px;
+                }
             }
 
-            .mn-newspaper img {
-                width: 26px;
-                height: 20px;
-            }
 
-            .mn-hktv img {
-                width: 44px;
-                height: 22px;
-            }
-
-            .mn-wsj img {
-                width: 28px;
-                height: 16px;
-            }
-
-            .mn-ked img {
-                width: 20px;
-                height: 20px;
-            }
-
-            .mn-subscription img {
-                width: 24px;
-                height: 24px;
-            }
+            
         }
 
         /////
@@ -102,7 +111,7 @@
 
                 .beta::after {
                     @include bg-img(34px, 15px, 'src/assets/header/logo-beta.svg');
-                    
+
                 }
 
             }
@@ -111,10 +120,9 @@
             .btn-hk-user {
                 &.before-login {
                     position: relative;
-                    font-weight: 900;
 
                     &::after {
-                        // after의 기본 display는 inline, inline에 position: absolute 설정 시 inline-block으로 바뀐다.
+                        // after의 기본 display는 inline, inline에 position: absolute 설정 시 width, height값 적용 가능
                         content: '';
                         position: absolute;
                         top: -7px;
@@ -178,6 +186,7 @@
                     // 로그인 후
                     .hk-user__info {
                         &.after {
+
                             //// LoggedInModalContent.tsx
                             .info__mypages {
                                 display: flex;
@@ -282,6 +291,7 @@
                                 }
                             }
                         }
+
                         ////
 
                         // 로그인 전
@@ -304,8 +314,9 @@
                                     font-size: 12px;
                                     font-weight: 600;
                                     line-height: 1;
-                                    
+
                                 }
+
                                 ////
                             }
 
@@ -320,7 +331,7 @@
                                 font-size: 11px;
 
                                 &::before {
-                                    content:'';
+                                    content: '';
                                     display: block;
                                     margin: 0 auto;
                                     width: 80px;
@@ -343,7 +354,7 @@
                                     }
 
                                     //// BenefitList.tsx
-                                    &.member-benefit { 
+                                    &.member-benefit {
                                         padding: 20px 0 0;
                                         border-top: 1px solid $gray;
                                         display: flex;
@@ -377,27 +388,22 @@
                                 justify-content: center;
                                 margin: 16px 0;
                                 font-size: 12px;
-                                font-weight: 600;
                             }
                         }
                     }
                 }
             }
         }
-
         ////
         //// DateDisplay.tsx
         .date-area {
             position: absolute;
             top: 24px;
             left: 0;
-
             .date {
                 font-size: 12px;
-                font-weight: 900;
             }
         }
-
         //// 
     }
 

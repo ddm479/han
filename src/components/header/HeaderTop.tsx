@@ -2,18 +2,23 @@ import React from "react";
 import RelServiceList from "./RelServiceList";
 import DateDisplay from "./DateDisplay";
 import HeaderUtil from "./utils/HeaderUtil";
+import { Tooltip } from "../../styles/Tooltip";
 
 const HeaderTop = () => {
     return (
         <div className="header-top-inner">
             <RelServiceList />
             <div className="main-logo-area">
-                <a href="https://www.hankyung.com/"><img src="src/assets/header/logo-hk.svg" width="220" height="55" /></a>
+                <div className="main-logo">                
+                    <a href="https://www.hankyung.com/">
+                        <img src="src/assets/header/logo-hk.svg" width="220" height="55" />
+                    </a>
+                    <Tooltip className="hk-tooltip">성공을 부르는 습관</Tooltip>
+                </div>
             </div>
 
             <HeaderUtil/>
             <DateDisplay />
-            
         </div>
     )
 };

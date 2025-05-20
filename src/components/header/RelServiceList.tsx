@@ -2,11 +2,11 @@ import React from "react";
 import RelServiceItem from "./RelServiceItem";
 
 const serviceLinks = [
-    { className: "mn-newspaper", href: "https://www.hankyung.com/", imgSrc: "src/assets/header/icon-rel-newspaper.svg" },
-    { className: "mn-hktv", href: "https://www.hankyung.com/", imgSrc: "src/assets/header/icon-rel-hktv.svg" },
-    { className: "mn-wsj", href: "https://www.hankyung.com/", imgSrc: "src/assets/header/icon-rel-wsj.svg" },
-    { className: "mn-ked", href: "https://www.hankyung.com/", imgSrc: "src/assets/header/icon-rel-ked.svg" },
-    { className: "mn-subscription", href: "https://www.hankyung.com/", imgSrc: "src/assets/header/icon-rel-subscription.svg" }
+    { className: "mn-newspaper", tooltip: "신문보기", href: "https://www.hankyung.com/", imgUrl: "src/assets/header/icon-rel-newspaper.svg" },
+    { className: "mn-hktv", tooltip: "한국경제TV", href: "https://www.hankyung.com/", imgUrl: "src/assets/header/icon-rel-hktv.svg" },
+    { className: "mn-wsj", tooltip: "월스트리트저널", href: "https://www.hankyung.com/", imgUrl: "src/assets/header/icon-rel-wsj.svg" },
+    { className: "mn-ked", tooltip: "KED Global", href: "https://www.hankyung.com/", imgUrl: "src/assets/header/icon-rel-ked.svg" },
+    { className: "mn-subscription", tooltip: "신문구독", href: "https://www.hankyung.com/", imgUrl: "src/assets/header/icon-rel-subscription.svg" }
 ];
 
 const RelServiceList = () => {
